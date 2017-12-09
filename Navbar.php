@@ -12,10 +12,10 @@
             <a class="nav-link" href="index.php?section=bestlist">Bestenliste</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Wetten</a>
+            <a class="nav-link" href="index.php?section=wetten">Wetten</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Statistik</a>
+            <a class="nav-link" href="index.php?section=statistik">Statistik</a>
         </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
