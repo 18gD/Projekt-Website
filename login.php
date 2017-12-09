@@ -1,5 +1,5 @@
 <div class="container pt-4">
-    <form class="form-signin">
+    <form class="form-signin" action="index.php?section=main", method="post">
         <h2 class="form-signin-heading">Logge dich bitte ein</h2>
         <label for="inputName" class="sr-only">Benutzername</label>
         <input type="text" id="inputName" class="form-control" placeholder="Nutzer" required autofocus>

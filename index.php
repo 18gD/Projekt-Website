@@ -4,6 +4,19 @@
     }else {
         $section = "main";
     }
+
+    $servername = "localhost";
+    $user = "root";
+    $password = "";
+    $database = "website_18gd";
+
+    $con = new mysqli($servername, $user, $password, $database);
+
+    if ($con->connect_error) {
+        die("Could not connect to database");
+    } else {
+        echo "<h1>Connected</h1>";
+    }
 ?>
 
 <html lang="en">
