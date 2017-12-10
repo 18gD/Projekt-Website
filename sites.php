@@ -1,7 +1,5 @@
 <?php
-    if($section == "main") {
-        include("startseite.php");
-    } elseif ($section == "bestlist") {
+    if ($section == "bestlist") {
         include("bestenliste.php");
     } elseif ($section == "login") {
         include("login.php");

@@ -3,7 +3,7 @@
     <span class="navbar-toggler-icon"></span>
 </button>
 
-<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+<div class="mt-3 collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
             <a class="nav-link" href="index.php?section=main">Startseite</a>

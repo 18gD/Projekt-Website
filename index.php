@@ -1,21 +1,24 @@
 <?php
     if (isset($_GET["section"])) {
-        $section = $_GET["section"];
+        $section = htmlspecialchars(stripslashes(trim($_GET["section"])));
     }else {
         $section = "main";
     }
 
     $servername = "localhost";
-    $user = "root";
-    $password = "";
+    $user = "Admin";
+    $password = "website_18gd";
     $database = "website_18gd";
 
     $con = new mysqli($servername, $user, $password, $database);
 
     if ($con->connect_error) {
         die("Could not connect to database");
-    } else {
-        echo "<h1>Connected</h1>";
+    }
+
+    if (isset($_POST["name"])) {
+        $name = htmlspecialchars(stripslashes(trim($_POST["name"])));
+        $pw = htmlspecialchars(stripslashes(trim($_POST["password"])));
     }
 ?>
 
