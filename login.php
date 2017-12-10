@@ -1,8 +1,14 @@
 <?php
-    if(false) {
+
+    if (isset($_POST["name"])) {
+        $name = htmlspecialchars(stripslashes(trim($_POST["name"])));
+        $pw = htmlspecialchars(stripslashes(trim($_POST["password"])));
+    }
+
+    if(true) {
 ?>
-<div class="container">
-    <form class="form-signin" action="index.php?section=main", method="post">
+<div class="container pt-3">
+    <form class="form-signin" action="index.php?section=login", method="post">
         <h2 class="form-signin-heading">Logge dich bitte ein</h2>
         <label for="inputName" class="sr-only">Benutzername</label>
         <input name="name" type="text" id="inputName" class="form-control" placeholder="Nutzer" required autofocus>
@@ -13,7 +19,7 @@
 </div>
 
 <?php
-        if(true) {
+        if(false) {
 ?>
 
 <div class="container alert alert-danger" role="alert">Benutzername und Passwort stimmen nicht überein</div>
@@ -23,7 +29,7 @@
     } else {
 ?>
 
-<div class="container alert alert-primary" role="alert">
+<div class="container mt-5 alert alert-primary" role="alert">
     Du bist bereits eingeloggt. Klicke hier um auszuloggen: <a href="#" class="alert-link">Logout</a>.
 </div>
 

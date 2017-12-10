@@ -6,19 +6,14 @@
     }
 
     $servername = "localhost";
-    $user = "Admin";
-    $password = "website_18gd";
+    $user = "root";
+    $password = "";
     $database = "website_18gd";
 
     $con = new mysqli($servername, $user, $password, $database);
 
     if ($con->connect_error) {
         die("Could not connect to database");
-    }
-
-    if (isset($_POST["name"])) {
-        $name = htmlspecialchars(stripslashes(trim($_POST["name"])));
-        $pw = htmlspecialchars(stripslashes(trim($_POST["password"])));
     }
 ?>
 
@@ -40,10 +35,7 @@
         <link href="main.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <?php include("Navbar.php");   ?>
-        </nav>
-
+        <?php include("Navbar.php");?>
         <?php include("sites.php");?>
 
         <hr>
